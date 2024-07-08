@@ -23,7 +23,13 @@ class BibleParser:
     @staticmethod
     def __parse(data, book):
         # 추가할 성경 인덱스 추가하기
-        if book == "John":
+        if book == "Matthew":
+            key = 39
+        elif book == "Mark":
+            key = 40
+        elif book == "Luke":
+            key = 41
+        elif book == "John":
             key = 42
         else:
             key = 0
